@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#10100f">
+<meta name="description" content="AURELIA — a premium boutique hotel website demo built for modern hospitality businesses.">
+<meta name="author" content="Sakim Mondal">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AURELIA — Boutique Hotel Demo">
+<meta property="og:description" content="A premium, modern and responsive boutique hotel website demo.">
+<meta name="twitter:card" content="summary_large_image">
+<title>AURELIA — Boutique Hotel | Demo Website</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<body>
+<header id="header"><div class="wrap nav">
+<a class="logo" href="#">AURELIA<small>BOUTIQUE HOTEL</small></a>
+<nav class="links"><a href="#rooms">Rooms</a><a href="#experience">Experience</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+<a class="navbtn" href="#contact">Book a stay</a><button class="menu" onclick="document.querySelector('.links').classList.toggle('mobile')">☰</button>
+</div></header>
+
+<section class="hero">
+<div class="arch"></div><div class="hero-content reveal">
+<div class="eyebrow">A quiet place to arrive</div>
+<h1>Stay<br><i>beautifully.</i></h1>
+<p>AURELIA is a boutique escape where thoughtful design, warm hospitality and slow mornings come together.</p>
+<div class="actions"><a class="btn primary" href="#contact">Reserve your stay</a><a class="btn" href="#rooms">Explore rooms</a></div>
+</div><div class="scroll">Scroll to discover ↓</div>
+</section>
+
+<section class="section wrap" id="rooms">
+<div class="heading reveal"><div class="eyebrow2">Sleep well</div><h2>Rooms with a soul.</h2><p>Three distinct spaces. One promise: you should never want to leave.</p></div>
+<div class="rooms">
+<article class="room reveal"><div class="roompic"><div class="window"></div><div class="bed"></div><div class="pillow"></div></div><div class="room-info"><h3>The Garden Room</h3><p>King bed · Garden view · Rain shower</p><div class="room-foot"><span class="price">₹7,900 / night</span><a href="#contact">View room →</a></div></div></article>
+<article class="room reveal"><div class="roompic" style="background:linear-gradient(145deg,#55483d,#1c1714)"><div class="window" style="background:linear-gradient(180deg,#625f56,#181817)"></div><div class="bed" style="background:#c2b8a8"></div><div class="pillow"></div></div><div class="room-info"><h3>The Courtyard Suite</h3><p>King bed · Private lounge · Bathtub</p><div class="room-foot"><span class="price">₹11,900 / night</span><a href="#contact">View room →</a></div></div></article>
+<article class="room reveal"><div class="roompic" style="background:linear-gradient(145deg,#353b3b,#151817)"><div class="window" style="background:linear-gradient(180deg,#83918b,#1a201e)"></div><div class="bed" style="background:#ddd6c9"></div><div class="pillow"></div></div><div class="room-info"><h3>The Aurelia Suite</h3><p>Super king · Living room · Terrace</p><div class="room-foot"><span class="price">₹15,900 / night</span><a href="#contact">View room →</a></div></div></article>
+</div>
+</section>
+
+<section class="section wrap" id="experience">
+<div class="experience">
+<div class="exp-main reveal"><h3>Slow down.<br><em>Stay awhile.</em></h3></div>
+<div class="exp-side reveal"><div class="eyebrow2">The experience</div><h2>Everything you need. Nothing you don't.</h2><p>From a locally sourced breakfast to late-night tea on the terrace, every detail is designed to make your stay feel effortless.</p>
+<div class="features">
+<div class="feature"><b>01</b><div><strong>All-day breakfast</strong><span>Fresh, seasonal & made to order.</span></div></div>
+<div class="feature"><b>02</b><div><strong>Wellness studio</strong><span>Yoga, massage & quiet spaces.</span></div></div>
+<div class="feature"><b>03</b><div><strong>Concierge</strong><span>Local recommendations, always.</span></div></div>
+</div></div>
+</div>
+</section>
+
+<section class="section" id="about"><div class="offer reveal"><div class="eyebrow2">A little more time</div><h2>Stay 3 nights.<br>Make the fourth on us.</h2><p>Book three consecutive nights directly with AURELIA and receive your fourth night complimentary.</p><a class="btn" href="#contact">Check availability</a></div></section>
+
+<section class="section wrap" id="contact">
+<div class="contact">
+<div class="reveal"><div class="eyebrow2">Come say hello</div><h2>Your next<br>escape starts here.</h2><p>Planning a weekend, a celebration or simply a reason to disappear for a while? Tell us when you'd like to arrive.</p>
+<div class="details"><div class="detail"><span>Reservations</span><a href="tel:+919876543210">+91 98765 43210</a></div><div class="detail"><span>Email</span><a href="mailto:stay@aureliahotel.demo">stay@aureliahotel.demo</a></div><div class="detail"><span>Address</span><div>12 Heritage Lane, Kolkata</div></div><div class="detail"><span>Hours</span><div>Front desk · 24 hours</div></div></div></div>
+<form class="booking reveal" onsubmit="book(event)"><h3>Request a reservation</h3><div class="formgrid">
+<div class="field"><label>Check in</label><input type="date" required></div><div class="field"><label>Check out</label><input type="date" required></div>
+<div class="field"><label>Guests</label><input type="number" min="1" value="2" required></div><div class="field"><label>Room</label><input type="text" placeholder="Garden Room"></div>
+<div class="field full"><label>Your name</label><input type="text" placeholder="Full name" required></div>
+<div class="field full"><label>Email / Phone</label><input type="text" placeholder="How can we reach you?" required></div>
+</div><button class="submit">Request booking →</button></form>
+</div>
+</section>
+
+<footer><div class="wrap"><div class="foot"><div><a class="logo" href="#">AURELIA<small>BOUTIQUE HOTEL</small></a><p>A quiet stay, thoughtfully made.</p></div><div class="footlinks"><a href="#rooms">Rooms</a><a href="#experience">Experience</a><a href="#contact">Contact</a><a href="tel:+919876543210">Call us</a></div></div><div class="copy"><span>© 2026 AURELIA HOTEL — DEMO WEBSITE</span><span>Built as a business website concept.</span></div></div></footer>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

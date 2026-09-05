@@ -1,0 +1,10 @@
+{
+  "name": "AURELIA — Boutique Hotel",
+  "short_name": "AURELIA",
+  "description": "A premium boutique hotel website demo.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#10100f",
+  "theme_color": "#10100f",
+  "icons": []
+}
